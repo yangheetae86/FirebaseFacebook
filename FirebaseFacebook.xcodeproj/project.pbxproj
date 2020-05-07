@@ -3,19 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F02DA320BA3B7C54A5ECBD5 /* Pods_FirebaseFacebook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CA1803C5B4726E404DE4005 /* Pods_FirebaseFacebook.framework */; };
 		C19C1FC62463CDA800735DC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19C1FC52463CDA800735DC3 /* AppDelegate.swift */; };
 		C19C1FC82463CDA800735DC3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19C1FC72463CDA800735DC3 /* SceneDelegate.swift */; };
 		C19C1FCA2463CDA800735DC3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19C1FC92463CDA800735DC3 /* ContentView.swift */; };
 		C19C1FCC2463CDA900735DC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C19C1FCB2463CDA900735DC3 /* Assets.xcassets */; };
 		C19C1FCF2463CDA900735DC3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C19C1FCE2463CDA900735DC3 /* Preview Assets.xcassets */; };
 		C19C1FD22463CDA900735DC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C19C1FD02463CDA900735DC3 /* LaunchScreen.storyboard */; };
+		C1F8AC642463DAFB00BCD9BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1F8AC632463DAFB00BCD9BC /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		64B041E69FE522D26E136741 /* Pods-FirebaseFacebook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseFacebook.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseFacebook/Pods-FirebaseFacebook.debug.xcconfig"; sourceTree = "<group>"; };
+		71837606B66EF0E785CBB7F5 /* Pods-FirebaseFacebook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseFacebook.release.xcconfig"; path = "Target Support Files/Pods-FirebaseFacebook/Pods-FirebaseFacebook.release.xcconfig"; sourceTree = "<group>"; };
+		7CA1803C5B4726E404DE4005 /* Pods_FirebaseFacebook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseFacebook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C19C1FC22463CDA800735DC3 /* FirebaseFacebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseFacebook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C19C1FC52463CDA800735DC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C19C1FC72463CDA800735DC3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		C19C1FCE2463CDA900735DC3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C19C1FD12463CDA900735DC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C19C1FD32463CDA900735DC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1F8AC632463DAFB00BCD9BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F02DA320BA3B7C54A5ECBD5 /* Pods_FirebaseFacebook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F97FF5B651EC2E847D242E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CA1803C5B4726E404DE4005 /* Pods_FirebaseFacebook.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E0041F365246C97ACDAB1DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				64B041E69FE522D26E136741 /* Pods-FirebaseFacebook.debug.xcconfig */,
+				71837606B66EF0E785CBB7F5 /* Pods-FirebaseFacebook.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C19C1FB92463CDA800735DC3 = {
 			isa = PBXGroup;
 			children = (
 				C19C1FC42463CDA800735DC3 /* FirebaseFacebook */,
 				C19C1FC32463CDA800735DC3 /* Products */,
+				5E0041F365246C97ACDAB1DA /* Pods */,
+				0F97FF5B651EC2E847D242E7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +88,7 @@
 				C19C1FCB2463CDA900735DC3 /* Assets.xcassets */,
 				C19C1FD02463CDA900735DC3 /* LaunchScreen.storyboard */,
 				C19C1FD32463CDA900735DC3 /* Info.plist */,
+				C1F8AC632463DAFB00BCD9BC /* GoogleService-Info.plist */,
 				C19C1FCD2463CDA900735DC3 /* Preview Content */,
 			);
 			path = FirebaseFacebook;
@@ -82,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C19C1FD62463CDA900735DC3 /* Build configuration list for PBXNativeTarget "FirebaseFacebook" */;
 			buildPhases = (
+				F07CB7DC064650C5B4DC9A78 /* [CP] Check Pods Manifest.lock */,
 				C19C1FBE2463CDA800735DC3 /* Sources */,
 				C19C1FBF2463CDA800735DC3 /* Frameworks */,
 				C19C1FC02463CDA800735DC3 /* Resources */,
+				F04A83FA64BAC334D94AB854 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,12 +163,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				C19C1FD22463CDA900735DC3 /* LaunchScreen.storyboard in Resources */,
+				C1F8AC642463DAFB00BCD9BC /* GoogleService-Info.plist in Resources */,
 				C19C1FCF2463CDA900735DC3 /* Preview Assets.xcassets in Resources */,
 				C19C1FCC2463CDA900735DC3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F04A83FA64BAC334D94AB854 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FirebaseFacebook/Pods-FirebaseFacebook-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FirebaseFacebook/Pods-FirebaseFacebook-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FirebaseFacebook/Pods-FirebaseFacebook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F07CB7DC064650C5B4DC9A78 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FirebaseFacebook-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C19C1FBE2463CDA800735DC3 /* Sources */ = {
@@ -282,6 +354,7 @@
 		};
 		C19C1FD72463CDA900735DC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64B041E69FE522D26E136741 /* Pods-FirebaseFacebook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +375,7 @@
 		};
 		C19C1FD82463CDA900735DC3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71837606B66EF0E785CBB7F5 /* Pods-FirebaseFacebook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
